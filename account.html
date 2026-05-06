@@ -28,7 +28,7 @@
                     <li><a href="account.html">Account</a></li>
                 </ul>
             </nav>
-            <img src="icon.jpeg" width="30px" height="30px">
+            <a href="card product.html"><img src="icon.jpeg" width="30px" height="30px"></a>
             <img src="menu.jpeg" class="menu-icon" onclick="menutoggle()" >
         </div>
  </div>
@@ -109,12 +109,24 @@
                 </ul>
             </div>
         </div> 
-        <hr>
-        <p class="Copyright">Copyright 2020 - Easy Tutorials</p>
+
     </div>
 </div>
 
 
 
 </body>
+<script>
+    var MenuItems=document.getElementById("MenuItems");
+    MenuItems.style.maxHeight="0px";
+    function menutoggle(){
+        if(MenuItems.style.maxHeight=="0px"){
+            MenuItems.style.maxHeight="200px";
+        }
+        else{
+            MenuItems.style.maxHeight="0px";
+        }
+    }
+    
+</script>
 </html>
